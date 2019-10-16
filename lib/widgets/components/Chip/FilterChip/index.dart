@@ -1,5 +1,5 @@
 /// @Author: xiaojia.dxj
-/// @Date: 2018-12-20 10:19:55 
+/// @Date: 2018-12-20 10:19:55
 /// @Last Modified by: xiaojia.dxj
 /// @Last Modified time: 2018-12-21 10:25:22
 
@@ -20,6 +20,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Chip/FilterChip';
+
   _DemoState createState() => _DemoState();
 }
 

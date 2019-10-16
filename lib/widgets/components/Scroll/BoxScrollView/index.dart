@@ -1,5 +1,5 @@
-/// @Author: 一凨 
-/// @Date: 2018-12-17 13:16:46 
+/// @Author: 一凨
+/// @Date: 2018-12-17 13:16:46
 /// @Last Modified by: 一凨
 /// @Last Modified time: 2018-12-17 13:34:46
 
@@ -24,6 +24,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Scroll/BoxScrollView';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -31,11 +32,7 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-        contentList: [
-          content0,
-          content1,
-          BoxScrollViewDemo()
-        ],
+        contentList: [content0, content1, BoxScrollViewDemo()],
         codeUrl: 'components/Scroll/BoxScrollView/demo.dart',
         docUrl:
             'https://docs.flutter.io/flutter/widgets/BoxScrollView-class.html',

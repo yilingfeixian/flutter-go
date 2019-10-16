@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_go/components/widget_demo.dart';
+
 import 'demo.dart';
 
 const Text0 = '''
@@ -20,7 +20,6 @@ const Text0 = '''
 样式支持用户自定义.
 ''';
 
-
 class Demo extends StatefulWidget {
   static const String routeName =
       '/element/themes/Cupertino/CupertinoSegmentedControl';
@@ -35,7 +34,8 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'CupertinoSegmentedControl',
       codeUrl: '/hemes/Cupertino/CupertinoSegmentedControl/demo.dart',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoSegmentedControl-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/cupertino/CupertinoSegmentedControl-class.html',
       contentList: [
         Text0,
         CupertinoSegmentedControlDemo(),

@@ -33,8 +33,8 @@ class _CupertinoAppFullDefault extends State {
             (___, Animation<double> animation, ____, Widget child) {
           return FadeTransition(
             opacity: animation,
-            child:  ScaleTransition(
-              scale:  Tween<double>(begin: 0.5, end: 1.0).animate(animation),
+            child: ScaleTransition(
+              scale: Tween<double>(begin: 0.5, end: 1.0).animate(animation),
               child: child,
             ),
           );
@@ -48,7 +48,8 @@ class _CupertinoAppFullDefault extends State {
         width: MediaQuery.of(context).size.width,
         //height: 500.0,
         child: CupertinoApp(
-          title: '这里是标题', // 设备用于识别用户的应用程序的单行描述
+          title: '这里是标题',
+          // 设备用于识别用户的应用程序的单行描述
           builder: (BuildContext context, Widget child) {
             // 覆盖下面的所有界面,一般当作追加属性用
             //return Container(child:Text('这里是内容1',style:TextStyle(color:Colors.black)));
@@ -58,11 +59,14 @@ class _CupertinoAppFullDefault extends State {
                 data: MediaQuery.of(context).copyWith(textScaleFactor: 1.4),
                 child: child);
           },
-          checkerboardOffscreenLayers: false, // 打开渲染到屏幕外位图的图层的checkerboarding
-          checkerboardRasterCacheImages: false, // 打开光栅缓存图像的检查板。
-          debugShowCheckedModeBanner:
-              true, // 在debug模式下打开一个小“DEBUG”横幅，表示该应用程序处于检查模式
-          color: Colors.red, // 该颜色为程序切换中应用图标背景的颜色，当应用图标背景为透明时
+          checkerboardOffscreenLayers: false,
+          // 打开渲染到屏幕外位图的图层的checkerboarding
+          checkerboardRasterCacheImages: false,
+          // 打开光栅缓存图像的检查板。
+          debugShowCheckedModeBanner: true,
+          // 在debug模式下打开一个小“DEBUG”横幅，表示该应用程序处于检查模式
+          color: Colors.red,
+          // 该颜色为程序切换中应用图标背景的颜色，当应用图标背景为透明时
 //          home: HomePage(),// 进入程序后显示的第一个页面,传入的是一个Widget，但实际上这个Widget需要包裹一个Scaffold
           home: CupertinoPageScaffold(
             // 进入程序后显示的第一个页面,传入的是一个Widget，但实际上这个Widget需要包裹一个Scaffold
@@ -80,15 +84,18 @@ class _CupertinoAppFullDefault extends State {
                         color: Colors
                             .black))), // 应用程序默认路由,（Navigator.defaultRouteName，即/）
           ),
-          initialRoute:
-              '/home', // 如果构建了导航器，则显示的第一条路径的名称,初始路由，当用户进入程序时，自动打开对应的路由。(home还是位于一级)传入的是上面routes的key
-          locale: Locale('zh', 'CH'), // 本地化初始值
+          initialRoute: '/home',
+          // 如果构建了导航器，则显示的第一条路径的名称,初始路由，当用户进入程序时，自动打开对应的路由。(home还是位于一级)传入的是上面routes的key
+          locale: Locale('zh', 'CH'),
+          // 本地化初始值
           localeResolutionCallback: (local, support) {
             // 区域分辨回调,当传入的是不支持的语种，可以根据这个回调，返回相近,并且支持的语种
             return const Locale('us', 'uk');
           },
-          localizationsDelegates: [], // 本地化委托，用于更改Flutter Widget默认的提示语，按钮text等,返回一个 继承自 LocalizationsDelegate 的对象
-          navigatorKey: GlobalKey(), // 导航主键 GlobalKey<NavigatorState>
+          localizationsDelegates: [],
+          // 本地化委托，用于更改Flutter Widget默认的提示语，按钮text等,返回一个 继承自 LocalizationsDelegate 的对象
+          navigatorKey: GlobalKey(),
+          // 导航主键 GlobalKey<NavigatorState>
           navigatorObservers: [
             // 路由观察器，当调用Navigator的相关方法时，会回调相关的操作
             MyObserver(),
@@ -110,10 +117,10 @@ class _CupertinoAppFullDefault extends State {
             '/home': (BuildContext context) => HomePage(),
             '/home/one': (BuildContext context) => OnePage(),
           },
-          showPerformanceOverlay:
-              false, // 当为true时应用程序顶部覆盖一层GPU和UI曲线图，可即时查看当前流畅度情况
-          showSemanticsDebugger:
-              false, // 当为true时，打开Widget边框，类似Android开发者模式中显示布局边界
+          showPerformanceOverlay: false,
+          // 当为true时应用程序顶部覆盖一层GPU和UI曲线图，可即时查看当前流畅度情况
+          showSemanticsDebugger: false,
+          // 当为true时，打开Widget边框，类似Android开发者模式中显示布局边界
           supportedLocales: [
             // 传入支持的语种数组
             const Locale('uok'),
@@ -144,7 +151,8 @@ class _CupertinoAppFullDefault extends State {
               backgroundColor: CupertinoColors.destructiveRed,
               middle: Text('这里是标题', style: TextStyle(color: Colors.white)),
             ),
-            child: Center(child: Text('这里是内容', style: TextStyle(color: Colors.black))),
+            child: Center(
+                child: Text('这里是内容', style: TextStyle(color: Colors.black))),
             backgroundColor: CupertinoColors.inactiveGray,
           );
         });

@@ -1,9 +1,8 @@
 /// @author 一凨
 
 import 'package:flutter/material.dart';
-
-import 'package:flutter_go/utils/style.dart';
 import 'package:flutter_go/resources/widget_name_to_icon.dart';
+import 'package:flutter_go/utils/style.dart';
 
 String _widgetName;
 

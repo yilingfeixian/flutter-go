@@ -16,22 +16,22 @@ class ScaffoldStateDemo extends StatefulWidget {
 
 // AppBar 默认的实例,有状态
 class _ScaffoldStateDemo extends State with SingleTickerProviderStateMixin {
-
   int count = 0;
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+
   @override
   Widget build(BuildContext context) {
     // 如果省略了 leading ，但 AppBar 在带有 Drawer 的 Scaffold 中，则会插入一个 button 以打开 Drawer。
     // 否则，如果最近的 Navigator 具有任何先前的 router ，则会插入BackButton。
     // 这种行为可以通过设置来关闭automaticallyImplyLeading 为false。在这种情况下，空的 leading widget 将导致 middle/title widget 拉伸开始。
-    return  SizedBox(
+    return SizedBox(
         height: 500,
         child: Scaffold(
-          key:_scaffoldKey,
+          key: _scaffoldKey,
           appBar: AppBar(
             title: Text('ScaffoldState Demo'),
           ),
-          body:  Center(
+          body: Center(
             child: Column(
               children: <Widget>[
                 RaisedButton(
@@ -39,8 +39,7 @@ class _ScaffoldStateDemo extends State with SingleTickerProviderStateMixin {
                   onPressed: () {
                     _scaffoldKey.currentState.openDrawer();
                     _scaffoldKey.currentState.showSnackBar(const SnackBar(
-                        content: Text("我是通过ScaffoldState的方式呼出的SnackBar.")
-                    ));
+                        content: Text("我是通过ScaffoldState的方式呼出的SnackBar.")));
                   },
                 )
               ],
@@ -72,9 +71,6 @@ class _ScaffoldStateDemo extends State with SingleTickerProviderStateMixin {
               ],
             ),
           ),
-
-        )
-
-    );
+        ));
   }
 }

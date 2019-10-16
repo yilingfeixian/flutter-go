@@ -26,6 +26,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Cupertino/CupertinoPageRoute';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -37,10 +38,11 @@ class _DemoState extends State<Demo> {
         content0,
         content1,
         demoBox.CupertinoPageRouteFullDefault(),
-        SizedBox(height:50)
+        SizedBox(height: 50)
       ],
       title: 'CupertinoPageRoute',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoPageRoute-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/cupertino/CupertinoPageRoute-class.html',
       codeUrl: 'themes/Cupertino/CupertinoPageRoute/demo.dart',
     );
   }

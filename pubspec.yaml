@@ -37,7 +37,7 @@ dependencies:
   city_pickers: ^0.0.1
   firebase_analytics: ^1.1.0
   #firebase_auth: ^0.8.3 #auth
-  firebase_core: ^0.3.4 # add dependency for Firebase Core
+  firebase_core: ^0.4.0+9 # add dependency for Firebase Core
   flutter_bloc: ^0.11.1
   bloc: ^0.12.0
   html: ^0.14.0+2

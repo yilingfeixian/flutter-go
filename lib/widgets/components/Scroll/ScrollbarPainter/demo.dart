@@ -6,15 +6,14 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgetsart';
 
 const double _kScrollbarThickness = 16.0;
 const Duration _kScrollbarFadeDuration = Duration(milliseconds: 300);
 const Duration _kScrollbarTimeToFade = Duration(milliseconds: 600);
 
 class PaintDemo extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -47,6 +46,7 @@ class ScrollbarPainterDemo extends StatefulWidget {
     @required this.child,
   }) : super(key: key);
   final Widget child;
+
   @override
   _ScrollbarPainterDemoState createState() => _ScrollbarPainterDemoState();
 }

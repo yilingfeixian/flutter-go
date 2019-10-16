@@ -6,7 +6,9 @@ import '../model/widget.dart';
 
 class CateCard extends StatefulWidget {
   final CategoryComponent category;
+
   CateCard({@required this.category});
+
   @override
   _CateCardState createState() => _CateCardState();
 }
@@ -20,8 +22,6 @@ class _CateCardState extends State<CateCard> {
     super.initState();
     _firstChildList = widget.category.children;
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -100,14 +100,11 @@ class _CateCardState extends State<CateCard> {
       padding: const EdgeInsets.only(bottom: 10.0, top: 5.0),
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage('assets/images/paimaiLogo.png'),
-          alignment: Alignment.bottomRight
-        ),
+            image: AssetImage('assets/images/paimaiLogo.png'),
+            alignment: Alignment.bottomRight),
       ),
       child: WidgetItemContainer(
-        commonItems: this._firstChildList,
-        columnCount: 3
-      ),
+          commonItems: this._firstChildList, columnCount: 3),
     );
   }
 }

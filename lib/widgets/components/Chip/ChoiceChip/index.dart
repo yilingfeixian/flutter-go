@@ -1,5 +1,5 @@
 /// @Author: xiaojia.dxj
-/// @Date: 2018-12-19 15:13:29 
+/// @Date: 2018-12-19 15:13:29
 /// @Last Modified by: xiaojia.dxj
 /// @Last Modified time: 2018-12-21 10:22:57
 
@@ -20,6 +20,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Chip/ChoiceChip';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -30,10 +31,11 @@ class _DemoState extends State<Demo> {
         contentList: [
           content0,
           content1,
-         ChoiceChipDemo(),
+          ChoiceChipDemo(),
         ],
         codeUrl: 'components/Chip/ChoiceChip/demo.dart',
-        docUrl:'https://docs.flutter.io/flutter/material/ChoiceChip-class.html',
+        docUrl:
+            'https://docs.flutter.io/flutter/material/ChoiceChip-class.html',
         title: 'ChoiceChip');
   }
 }

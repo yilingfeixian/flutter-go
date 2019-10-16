@@ -7,13 +7,13 @@
 
 import 'package:flutter/material.dart';
 
-
 class SliderDemo extends StatefulWidget {
   _Demo createState() => _Demo();
 }
 
 class _Demo extends State<SliderDemo> {
   double value = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Slider(
@@ -42,6 +42,7 @@ class SliderThemeDemo extends StatefulWidget {
 
 class _SliderThemeDemo extends State<SliderThemeDemo> {
   double value = 0.0;
+
   @override
   Widget build(BuildContext context) {
     return Container(

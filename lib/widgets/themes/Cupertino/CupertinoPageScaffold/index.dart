@@ -23,6 +23,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Cupertino/CupertinoPageScaffold';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -34,10 +35,11 @@ class _DemoState extends State<Demo> {
         content0,
         content1,
         demoBox.CupertinoPageScaffoldFullDefault(),
-        SizedBox(height:50)
+        SizedBox(height: 50)
       ],
       title: 'CupertinoPageScaffold',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoPageScaffold-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/cupertino/CupertinoPageScaffold-class.html',
       codeUrl: 'themes/Cupertino/CupertinoPageScaffold/demo.dart',
     );
   }

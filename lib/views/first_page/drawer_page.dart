@@ -1,18 +1,19 @@
 import 'dart:async';
 
+import 'package:event_bus/event_bus.dart';
 import 'package:fluro/fluro.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_go/components/single_theme_color.dart';
-import 'package:flutter_go/model/user_info.dart';
-import 'package:share/share.dart';
-import 'package:flutter_go/utils/data_utils.dart';
-import 'package:flutter_go/routers/application.dart';
-import 'package:flutter_go/routers/routers.dart';
-import './search_page.dart';
 import 'package:flutter_go/event/event_bus.dart';
 import 'package:flutter_go/event/event_model.dart';
-import 'package:event_bus/event_bus.dart';
+import 'package:flutter_go/model/user_info.dart';
+import 'package:flutter_go/routers/application.dart';
+import 'package:flutter_go/routers/routers.dart';
+import 'package:flutter_go/utils/data_utils.dart';
+import 'package:share/share.dart';
+
+import './search_page.dart';
 
 const List<Map<String, dynamic>> defalutThemeColor = [
   {'cnName': 'Flutter篮', 'value': 0xFF3391EA},
@@ -22,6 +23,7 @@ const List<Map<String, dynamic>> defalutThemeColor = [
 
 class DrawerPage extends StatefulWidget {
   final UserInformation userInfo;
+
   DrawerPage({Key key, this.userInfo}) : super(key: key);
 
   @override
@@ -209,7 +211,6 @@ class _DrawerPageState extends State<DrawerPage> {
             } else {
               //No description provided.
               Application.router.navigateTo(context, '${Routes.loginPage}');
-
             }
           },
         ),

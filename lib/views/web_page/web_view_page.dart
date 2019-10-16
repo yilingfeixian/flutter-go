@@ -6,18 +6,18 @@
 import 'dart:core';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
-
+import 'package:flutter_go/api/api.dart';
 /// import 'package:flutter_go/model/collection.dart';
 import 'package:flutter_go/event/event_bus.dart';
 import 'package:flutter_go/event/event_model.dart';
-import 'package:flutter_go/api/api.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 
 class WebViewPage extends StatefulWidget {
   final String url;
   final String title;
 
   WebViewPage(this.url, this.title);
+
   _WebViewPageState createState() => _WebViewPageState();
 }
 

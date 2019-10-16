@@ -1,5 +1,5 @@
 /// @Author: xiaojia.dxj
-/// @Date: 2018-12-18 11:40:57 
+/// @Date: 2018-12-18 11:40:57
 /// @Last Modified by: xiaojia.dxj
 /// @Last Modified time: 2018-12-18 15:13:23
 
@@ -21,6 +21,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Chip/Chip';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -31,11 +32,10 @@ class _DemoState extends State<Demo> {
         contentList: [
           content0,
           content1,
-         ChipDemo(),
+          ChipDemo(),
         ],
         codeUrl: 'components/Chip/Chip/demo.dart',
-        docUrl:
-            'https://docs.flutter.io/flutter/material/Chip-class.html',
+        docUrl: 'https://docs.flutter.io/flutter/material/Chip-class.html',
         title: 'Chip');
   }
 }

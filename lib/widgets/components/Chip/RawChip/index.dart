@@ -1,5 +1,5 @@
 /// @Author: xiaojia.dxj
-/// @Date: 2018-12-20 20:30:41 
+/// @Date: 2018-12-20 20:30:41
 /// @Last Modified by: xiaojia.dxj
 /// @Last Modified time: 2018-12-21 11:35:51
 
@@ -27,6 +27,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Chip/RawChip';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -40,7 +41,7 @@ class _DemoState extends State<Demo> {
           FilterChipDemo(),
         ],
         codeUrl: 'components/Chip/RawChip/demo.dart',
-        docUrl:'https://docs.flutter.io/flutter/material/RawChip-class.html',
+        docUrl: 'https://docs.flutter.io/flutter/material/RawChip-class.html',
         title: 'RawChip');
   }
 }

@@ -7,6 +7,7 @@
 // tartget: 代码获取自: https://blog.csdn.net/O_time/article/details/86496537
 //
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -19,11 +20,11 @@ class NetLoadingDialog extends StatefulWidget {
 
   NetLoadingDialog(
       {Key key,
-        this.loadingText = "loading...",
-        this.outsideDismiss = true,
-        this.dismissCallback,
-        this.loading,
-        this.requestCallBack})
+      this.loadingText = "loading...",
+      this.outsideDismiss = true,
+      this.dismissCallback,
+      this.loading,
+      this.requestCallBack})
       : super(key: key);
 
   @override

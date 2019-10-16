@@ -24,6 +24,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Cupertino/CupertinoIcons';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -31,14 +32,10 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      contentList: [
-        content0,
-        content1,
-        demoBox.CupertinoIconsFullDefault()
-      ],
-      title: 'CupertinoIcons',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoIcons-class.html',
-      codeUrl: 'themes/Cupertino/CupertinoIcons/demo.dart'
-    );
+        contentList: [content0, content1, demoBox.CupertinoIconsFullDefault()],
+        title: 'CupertinoIcons',
+        docUrl:
+            'https://docs.flutter.io/flutter/cupertino/CupertinoIcons-class.html',
+        codeUrl: 'themes/Cupertino/CupertinoIcons/demo.dart');
   }
 }

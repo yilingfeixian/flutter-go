@@ -4,40 +4,28 @@
 /// Last Modified time: 2019-01-11 14:40:09
 
 import 'package:flutter/material.dart';
-
-import 'package:flutter_go/components/cate_card.dart';
-
-import 'package:flutter_go/routers/application.dart';
-
+import 'package:flutter_go/components/cate_card.dart';mport 'package:flutter_go/routers/application.dart';
 
 class WidgetPage extends StatefulWidget {
-
-
-
-
   @override
   SecondPageState createState() => new SecondPageState();
 }
 
-class SecondPageState extends State<WidgetPage> with AutomaticKeepAliveClientMixin{
-
+class SecondPageState extends State<WidgetPage>
+    with AutomaticKeepAliveClientMixin {
   SecondPageState() : super();
 
   TextEditingController controller;
   String active = 'test';
   String data = '无';
 
-
+  @override
+  bool get wantKeepAlive => true;
 
   @override
-    bool get wantKeepAlive => true;
-
-  @override
-  void initState() { 
+  void initState() {
     super.initState();
   }
-
-
 
   Widget buildGrid() {
     // 存放最后的widget
@@ -58,5 +46,4 @@ class SecondPageState extends State<WidgetPage> with AutomaticKeepAliveClientMix
       child: this.buildGrid(),
     );
   }
-
 }

@@ -22,6 +22,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Cupertino/CupertinoColors';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -29,13 +30,10 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      contentList: [
-        content0,
-        content1,
-        demoBox.CupertinoColorsFullDefault()
-      ],
+      contentList: [content0, content1, demoBox.CupertinoColorsFullDefault()],
       title: 'CupertinoColors',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoColors-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/cupertino/CupertinoColors-class.html',
       codeUrl: 'themes/Cupertino/CupertinoColors/demo.dart',
     );
   }

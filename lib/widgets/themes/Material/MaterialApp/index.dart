@@ -1,5 +1,5 @@
-/// @Author: 一凨 
-/// @Date: 2018-12-27 16:25:22 
+/// @Author: 一凨
+/// @Date: 2018-12-27 16:25:22
 /// @Last Modified by: 一凨
 /// @Last Modified time: 2019-01-07 15:52:45
 
@@ -34,6 +34,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Material/MaterialApp';
+
   _DemoState createState() => _DemoState();
 }
 

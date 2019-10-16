@@ -14,6 +14,7 @@ class CupertinoSwitchDemo extends StatefulWidget {
 
 class _Demo extends State<CupertinoSwitchDemo> {
   bool _lights = false;
+
   @override
   Widget build(BuildContext context) {
     return MergeSemantics(
@@ -22,12 +23,18 @@ class _Demo extends State<CupertinoSwitchDemo> {
         trailing: CupertinoSwitch(
           activeColor: Colors.yellow,
           value: _lights,
-          onChanged: (bool value) { setState(() { _lights = value; }); },
+          onChanged: (bool value) {
+            setState(() {
+              _lights = value;
+            });
+          },
         ),
-        onTap: () { setState(() { _lights = !_lights; }); },
+        onTap: () {
+          setState(() {
+            _lights = !_lights;
+          });
+        },
       ),
     );
   }
-
 }
-

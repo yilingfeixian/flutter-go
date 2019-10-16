@@ -1,7 +1,7 @@
- /// @Author: 一凨 
- /// @Date: 2018-11-16 15:09:12 
- /// @Last Modified by:   一凨 
- /// @Last Modified time: 2018-11-16 15:09:12 
+/// @Author: 一凨
+/// @Date: 2018-11-16 15:09:12
+/// @Last Modified by:   一凨
+/// @Last Modified time: 2018-11-16 15:09:12
 
 import 'package:flutter/material.dart';
 
@@ -77,6 +77,7 @@ lib /是隐含的，因此它不应包含在 assets 路径中。
 
 class Demo extends StatefulWidget {
   static const String routeName = '/element/Media/Image/AssetImage';
+
   _DemoState createState() => _DemoState();
 }
 

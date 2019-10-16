@@ -7,6 +7,7 @@ class Demo extends StatefulWidget {
 
 class _State extends State<Demo> {
   RangeValues valuess = RangeValues(20.0, 50.0);
+
   @override
   Widget build(BuildContext context) {
     return RangeSlider(

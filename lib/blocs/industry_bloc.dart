@@ -7,7 +7,9 @@
  * tartget:
  */
 import 'dart:async';
+
 import 'package:bloc/bloc.dart';
+
 import './industry_api.dart';
 import './industry_event.dart';
 import './industry_state.dart';
@@ -15,9 +17,10 @@ import './industry_state.dart';
 class SuggestionBloc extends Bloc<SuggestionEvent, SuggestionState> {
   @override
   SuggestionState get initialState => SuggestionUninitialized();
+
   @override
-  Stream<SuggestionState> mapEventToState(SuggestionEvent event)async* {
-  //Stream<SuggestionState> mapEventToState(SuggestionState currentState, SuggestionEvent event,) async* {
+  Stream<SuggestionState> mapEventToState(SuggestionEvent event) async* {
+    //Stream<SuggestionState> mapEventToState(SuggestionState currentState, SuggestionEvent event,) async* {
     if (event is SuggestionFetch) {
       //print('event==>${event}');
       try {

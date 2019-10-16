@@ -1,7 +1,7 @@
- /// @Author: 一凨 
- /// @Date: 2018-11-16 15:09:12 
- /// @Last Modified by: 一凨
- /// @Last Modified time: 2018-12-08 20:48:28
+/// @Author: 一凨
+/// @Date: 2018-11-16 15:09:12
+/// @Last Modified by: 一凨
+/// @Last Modified time: 2018-12-08 20:48:28
 
 import 'package:flutter/material.dart';
 
@@ -23,11 +23,11 @@ const String _contentText1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/element/Media/Image/MemoryImage';
+
   _DemoState createState() => _DemoState();
 }
 
 class _DemoState extends State<Demo> {
-
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
@@ -39,8 +39,7 @@ class _DemoState extends State<Demo> {
       title: 'MemoryImage',
       // desc: 'MemoryImage 使用介绍',
       docUrl: 'https://docs.flutter.io/flutter/painting/MemoryImage-class.html',
-      codeUrl:
-          'elements/Media/Image/MemoryImage/index.dart',
+      codeUrl: 'elements/Media/Image/MemoryImage/index.dart',
     );
   }
 }

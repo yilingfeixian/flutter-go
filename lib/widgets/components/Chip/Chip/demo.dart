@@ -1,5 +1,5 @@
 /// @Author: xiaojia.dxj
-/// @Date: 2018-12-18 11:40:57 
+/// @Date: 2018-12-18 11:40:57
 /// @Last Modified by: 一凨
 /// @Last Modified time: 2019-01-14 16:50:43
 
@@ -12,6 +12,7 @@ class ChipDemo extends StatefulWidget {
 class _ChipDemoState extends State<ChipDemo> {
   String dec = '点击回收';
   int count = 0;
+
   _modifty() {
     setState(() {
       dec = 'delete success: $count';

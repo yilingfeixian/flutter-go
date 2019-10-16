@@ -6,8 +6,8 @@
 /// target: SnackBarAction 的示例
 
 import 'package:flutter/material.dart';
-
 import 'package:flutter_go/components/widget_demo.dart';
+
 import './demo.dart';
 
 const String _Text0 = """
@@ -43,7 +43,6 @@ const String _Text0 = """
 - controller TabController对象
 """;
 
-
 class Demo extends StatefulWidget {
   static const String routeName = '/components/Bar/TabBar';
 
@@ -57,11 +56,9 @@ class _DemoState extends State<Demo> {
     return WidgetDemo(
       title: 'TabBar',
       codeUrl: 'components/Bar/TabBar/demo.dart',
-      contentList: [
-        _Text0,
-        TabBarDemo()
-      ],
-      docUrl: 'https://docs.flutter.io/flutter/material/SnackBarAction-class.html',
+      contentList: [_Text0, TabBarDemo()],
+      docUrl:
+          'https://docs.flutter.io/flutter/material/SnackBarAction-class.html',
     );
   }
 }

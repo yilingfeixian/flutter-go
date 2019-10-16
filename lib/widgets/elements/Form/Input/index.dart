@@ -8,8 +8,8 @@
 
 import "package:flutter/material.dart";
 
-import '../../../../model/widget.dart';
 import './TextField/index.dart' as TextField;
+import '../../../../model/widget.dart';
 
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(

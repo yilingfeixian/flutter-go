@@ -1,5 +1,5 @@
-/// @Author: 一凨 
-/// @Date: 2018-12-27 16:25:22 
+/// @Author: 一凨
+/// @Date: 2018-12-27 16:25:22
 /// @Last Modified by: 一凨
 /// @Last Modified time: 2019-01-07 15:52:45
 
@@ -33,6 +33,7 @@ const String content1 = '''
 
 class Demo extends StatefulWidget {
   static const String routeName = '/themes/Cupertino/CupertinoApp';
+
   _DemoState createState() => _DemoState();
 }
 
@@ -40,13 +41,10 @@ class _DemoState extends State<Demo> {
   @override
   Widget build(BuildContext context) {
     return WidgetDemo(
-      contentList: [
-        content0,
-        content1,
-        demoBox.CupertinoAppFullDefault()
-      ],
+      contentList: [content0, content1, demoBox.CupertinoAppFullDefault()],
       title: 'CupertinoApp',
-      docUrl: 'https://docs.flutter.io/flutter/cupertino/CupertinoApp-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/cupertino/CupertinoApp-class.html',
       codeUrl: 'themes/Cupertino/CupertinoApp/demo.dart',
     );
   }

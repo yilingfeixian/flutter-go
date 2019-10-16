@@ -5,49 +5,47 @@
 
 import 'package:flutter/material.dart';
 
-import '../../../model/widget.dart';
 import './CheckedPopupMenuItem/index.dart' as CheckedPopupMenuItem;
 import './DropdownMenuItem/index.dart' as DropdownMenuItem;
 import './PopupMenuButton/index.dart' as PopupMenuButton;
 import './PopupMenuDivider/index.dart' as PopupMenuDivider;
 import './PopupMenuEntry/index.dart' as PopupMenuEntry;
-import './PopupMenuItemState/index.dart' as PopupMenuItemState;
 import './PopupMenuItem/index.dart' as PopupMenuItem;
-
-
+import './PopupMenuItemState/index.dart' as PopupMenuItemState;
+import '../../../model/widget.dart'
 List<WidgetPoint> widgetPoints = [
   WidgetPoint(
-    name:'CheckedPopupMenuItem',
+    name: 'CheckedPopupMenuItem',
     routerName: CheckedPopupMenuItem.Demo.routeName,
     buildRouter: (BuildContext context) => CheckedPopupMenuItem.Demo(),
   ),
   WidgetPoint(
-    name:'DropdownMenuItem',
+    name: 'DropdownMenuItem',
     routerName: DropdownMenuItem.Demo.routeName,
     buildRouter: (BuildContext context) => DropdownMenuItem.Demo(),
   ),
   WidgetPoint(
-    name:'PopupMenuButton',
+    name: 'PopupMenuButton',
     routerName: PopupMenuButton.Demo.routeName,
     buildRouter: (BuildContext context) => PopupMenuButton.Demo(),
   ),
   WidgetPoint(
-    name:'PopupMenuDivider',
+    name: 'PopupMenuDivider',
     routerName: PopupMenuDivider.Demo.routeName,
     buildRouter: (BuildContext context) => PopupMenuDivider.Demo(),
   ),
   WidgetPoint(
-    name:'PopupMenuEntry',
+    name: 'PopupMenuEntry',
     routerName: PopupMenuEntry.Demo.routeName,
     buildRouter: (BuildContext context) => PopupMenuEntry.Demo(),
   ),
   WidgetPoint(
-    name:'PopupMenuItemState',
+    name: 'PopupMenuItemState',
     routerName: PopupMenuItemState.Demo.routeName,
     buildRouter: (BuildContext context) => PopupMenuItemState.Demo(),
   ),
   WidgetPoint(
-    name:'PopupMenuItem',
+    name: 'PopupMenuItem',
     routerName: PopupMenuItem.Demo.routeName,
     buildRouter: (BuildContext context) => PopupMenuItem.Demo(),
   ),

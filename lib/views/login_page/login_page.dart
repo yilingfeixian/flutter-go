@@ -1,17 +1,15 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:event_bus/event_bus.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-
-import 'package:flutter_go/utils/data_utils.dart';
-import 'package:flutter_go/views/home.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_go/event/event_bus.dart';
 import 'package:flutter_go/event/event_model.dart';
-
+import 'package:flutter_go/model/user_info.dart';
 import 'package:flutter_go/model/user_info_cache.dart';
 import 'package:flutter_go/routers/application.dart';
 import 'package:flutter_go/routers/routers.dart';
-import 'package:flutter_go/model/user_info.dart';
+import 'package:flutter_go/utils/data_utils.dart';
+import 'package:flutter_go/views/home.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -256,15 +254,15 @@ class _LoginPageState extends State<LoginPage> {
               MaterialPageRoute(builder: (context) => AppPage(userResult)),
               (route) => route == null);
         }
-      }else if(userResult.runtimeType == String){
+      } else if (userResult.runtimeType == String) {
         Fluttertoast.showToast(
-          msg: userResult,
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.CENTER,
-          timeInSecForIos: 1,
-          backgroundColor: Theme.of(context).primaryColor,
-          textColor: Colors.white,
-          fontSize: 16.0);
+            msg: userResult,
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.CENTER,
+            timeInSecForIos: 1,
+            backgroundColor: Theme.of(context).primaryColor,
+            textColor: Colors.white,
+            fontSize: 16.0);
       }
     }).catchError((errorMsg) {
       setState(() {
@@ -388,7 +386,9 @@ class _LoginPageState extends State<LoginPage> {
                                   decoration: TextDecoration.underline),
                             ),
                             onPressed: () {
-                              Application.router.navigateTo(context, Routes.home, clearStack: true);
+                              Application.router.navigateTo(
+                                  context, Routes.home,
+                                  clearStack: true);
                             },
                           )
                         ],

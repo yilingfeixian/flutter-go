@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 /// Created with Android Studio.
 /// User: 一晟
 /// Date: 2019/1/1
@@ -7,22 +8,16 @@
 
 import 'package:flutter_go/components/widget_demo.dart';
 
-import 'package:flutter/material.dart';
-
 import './demo.dart' as BottomAppBarDemo;
 
-const String _Text0 =
-"""### **简介**
+const String _Text0 = """### **简介**
 > BottomAppBar “底部应用栏”
 - 一个通常与 Scaffold.bottomNavigationBar 一起使用的容器，可以在顶部有一个凹口，为重叠的FloatingActionButton腾出空间;
 """;
 
-
-const String _Text1 =
-"""### **基本用法**
+const String _Text1 = """### **基本用法**
 > 通常与 Scaffold 和 FloatingActionButton 一起使用;
 """;
-
 
 class Demo extends StatefulWidget {
   static const String routeName = '/components//Bar/BottomAppBar';
@@ -38,7 +33,8 @@ class _DemoState extends State<Demo> {
       title: 'BottomAppBar',
       codeUrl: 'components/Bar/BottomAppBar/demo.dart',
       contentList: allDomes(context, this),
-      docUrl: 'https://docs.flutter.io/flutter/material/BottomAppBar-class.html',
+      docUrl:
+          'https://docs.flutter.io/flutter/material/BottomAppBar-class.html',
     );
   }
 }
@@ -56,6 +52,3 @@ List allDomes(BuildContext context, _DemoState that) {
     SizedBox(height: 20.0), // 间距
   ];
 }
-
-
-

@@ -30,7 +30,7 @@ class CustomViewPageState extends State<CustomViewPage>
     _doubleAnimation = Tween(begin: 0.0, end: 360.0).animate(_controller);
 
     _controller.addListener(() {
-      if(mounted){
+      if (mounted) {
         this.setState(() {});
       }
     });
@@ -40,15 +40,14 @@ class CustomViewPageState extends State<CustomViewPage>
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 100.0,
-        height: 100.0,
-        margin: EdgeInsets.all(8.0),
-        child: CustomPaint(
-            child: Center(
-                child: Text((_doubleAnimation.value / 3.6).round().toString())),
-            painter: CircleProgressBarPainter(_doubleAnimation.value)
-        ),
-      );
+      width: 100.0,
+      height: 100.0,
+      margin: EdgeInsets.all(8.0),
+      child: CustomPaint(
+          child: Center(
+              child: Text((_doubleAnimation.value / 3.6).round().toString())),
+          painter: CircleProgressBarPainter(_doubleAnimation.value)),
+    );
   }
 
   void onAnimationStart() {
@@ -88,9 +87,11 @@ class CircleProgressBarPainter extends CustomPainter {
       ..strokeWidth = 10.0
       ..isAntiAlias = true;
   }
+
   @override
   void paint(Canvas canvas, Size size) {
-    canvas.drawCircle(Offset(size.width / 2, size.height / 2), size.width / 2,_paintBackground);
+    canvas.drawCircle(Offset(size.width / 2, size.height / 2), size.width / 2,
+        _paintBackground);
     Rect rect = Rect.fromCircle(
       center: Offset(size.width / 2, size.height / 2),
       radius: size.width / 2,
